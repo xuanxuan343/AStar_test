@@ -73,9 +73,10 @@ export default class Game extends cc.Component {
             let label=new cc.Node(this.count+"").addComponent(cc.Label)
             label.fontSize=20
             label.lineHeight=20
+            label.cacheMode=cc.Label.CacheMode.BITMAP
             label.string=this.count+"";
              label.overflow=cc.Label.Overflow.NONE
-             label.cacheMode=cc.Label.CacheMode.BITMAP
+         
             label.node.parent=findexLableLayer
             let labePos=this.getNodePosByMapPos(ret[0].x,ret[0].y)
             label.node.position=cc.v3(labePos.x,labePos.y)

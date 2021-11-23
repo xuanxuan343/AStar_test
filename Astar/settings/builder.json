@@ -8,7 +8,7 @@
   },
   "packageName": "org.cocos2d.helloworld",
   "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
-  "title": "hello_world",
+  "title": "Astar_z",
   "webOrientation": "auto",
   "inlineSpriteFrames": true,
   "inlineSpriteFrames_native": true,
@@ -23,7 +23,7 @@
   "fb-instant-games": {},
   "android": {
     "REMOTE_SERVER_ROOT": "",
-    "packageName": "org.cocos2d.demo"
+    "packageName": "org.cocos2d.demo.astar"
   },
   "ios": {
     "REMOTE_SERVER_ROOT": "",
@@ -41,13 +41,14 @@
     "width": 1280
   },
   "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
+    "REMOTE_SERVER_ROOT": "http://10.76.40.239:7456/preview-android-instant/",
     "host": "",
     "packageName": "org.cocos2d.demo",
     "pathPattern": "",
     "recordPath": "",
     "scheme": "https",
-    "skipRecord": false
+    "skipRecord": true
   },
-  "appBundle": false
+  "appBundle": false,
+  "includeAnySDK": false
 }
