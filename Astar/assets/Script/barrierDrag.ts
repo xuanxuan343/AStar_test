@@ -27,6 +27,14 @@ export default class BarrierDrag extends cc.Component {
     start () {
         this.node.on(cc.Node.EventType.TOUCH_START,(event:cc.Event.EventTouch)=>{
              cc.log('---TOUCH_START---')
+
+              cc.log('---convertToNodeSpaceAR---',this.node.convertToNodeSpaceAR(cc.v2(100,100)))
+              cc.log('---convertToNodeSpace---',this.node.convertToNodeSpace(cc.v2(100,100)))
+              cc.log('---convertToWorldSpace---',this.node.convertToWorldSpace(cc.v2(100,100)))
+              cc.log('---convertToWorldSpaceAR---',this.node.convertToWorldSpaceAR(cc.v2(100,100)))
+              cc.log('---convertTouchToNodeSpaceAR---',this.node.convertTouchToNodeSpaceAR(event.touch))
+
+
              event.stopPropagation()
               this.audioPlay('audio/click')
             if(!this.isInMap){
@@ -147,8 +155,10 @@ export default class BarrierDrag extends cc.Component {
              x=x??this.node.x
              y=y??this.node.y
 
-             // 先转换为世界坐标
-             let rootPos=this.node.parent.convertToWorldSpaceAR(cc.v2(x,y))
+             // 注意 *** 先转换为世界坐标  世界坐标跟节点坐标不能简单等价，一定要转换成节点坐标才能用
+             let woldPos=this.node.parent.convertToWorldSpaceAR(cc.v2(x,y))
+             // 一定要加上这句
+             let rootPos=cc.find("Canvas/gameLayer/MapLayer").convertToNodeSpaceAR(woldPos)
              x=rootPos.x
              y=rootPos.y
 

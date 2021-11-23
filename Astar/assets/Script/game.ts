@@ -75,6 +75,7 @@ export default class Game extends cc.Component {
             label.lineHeight=20
             label.string=this.count+"";
              label.overflow=cc.Label.Overflow.NONE
+             label.cacheMode=cc.Label.CacheMode.BITMAP
             label.node.parent=findexLableLayer
             let labePos=this.getNodePosByMapPos(ret[0].x,ret[0].y)
             label.node.position=cc.v3(labePos.x,labePos.y)
@@ -338,6 +339,10 @@ export default class Game extends cc.Component {
 
         console.log('---tableData.length--',tableData.length)
     
+    }
+
+    exitGame(){
+        cc.game.end()
     }
 
 
