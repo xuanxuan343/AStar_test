@@ -17,7 +17,7 @@
         "__id__": 2
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_opacity": 255,
@@ -88,15 +88,18 @@
       },
       {
         "__id__": 67
+      },
+      {
+        "__id__": 76
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 76
+        "__id__": 78
       },
       {
-        "__id__": 77
+        "__id__": 79
       }
     ],
     "_prefab": null,
@@ -186,7 +189,7 @@
       "array": [
         0,
         0,
-        336.1986514001268,
+        219.97045256124744,
         0,
         0,
         0,
@@ -3249,7 +3252,7 @@
       "ctor": "Float64Array",
       "array": [
         554.759,
-        320.295,
+        320.29499999999985,
         0,
         0,
         0,
@@ -3605,7 +3608,7 @@
     "_alignFlags": 33,
     "_left": 0,
     "_right": 35.240999999999985,
-    "_top": 34.704999999999984,
+    "_top": 34.705000000000155,
     "_bottom": 0,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
@@ -3618,6 +3621,78 @@
     "_originalWidth": 0,
     "_originalHeight": 0,
     "_id": "22HwT26bdA3p5HF4qGoVZh"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "configNode",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 77
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        -640,
+        -375,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "a3coQs1QxGo4KZpZ8nHQ8X"
+  },
+  {
+    "__type__": "8a7e2Vz7xBMiLDIg5VLbVSn",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 76
+    },
+    "_enabled": true,
+    "_id": "ff0KjyRnxIPaRX5s9tQdn6"
   },
   {
     "__type__": "cc.Canvas",
